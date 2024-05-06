@@ -62,21 +62,37 @@
 запросы и ответы со стороны сервиса для **всех** его операций.
 
 #### Демонстрация работы
+
 POST запрос
+
 ![](images/Screenshot1.png)
+
 Невалидный POST запрос с пропущенным полем description
+
 ![](images/Screenshot2.png)
+
 GET-запрос
+
 ![](images/Screenshot3.png)
+
 GET-запрос к несуществующему продукту
+
 ![](images/Screenshot4.png)
+
 PUT-запрос
+
 ![](images/Screenshot5.png)
+
 DELETE-запрос
+
 ![](images/Screenshot6.png)
+
 попытка считать удаленный продукт
+
 ![](images/Screenshot7.png)
+
 GET-запрос на получение всех продуктов
+
 ![](images/Screenshot8.png)
 
 
@@ -103,11 +119,17 @@ GET-запрос на получение всех продуктов
 
 #### Демонстрация работы
 ---
+
 POST-запрос на создание продукта (в ответе сразу есть пустое поле для icon)
+
 ![](images/Screenshot9.png)
+
 POST-запрос на на добавление картинки к этому продукту (в ответе сразу появилось значение для поля icon)
+
 ![](images/Screenshot10.png)
+
 GET-запрос на получение картинки
+
 ![](images/Screenshot11.png)
 
 
