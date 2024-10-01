@@ -43,8 +43,9 @@ class Server:
             print('server is on')
             while True:
                 conn, addr = server_sock.accept()
-                Thread(target=self.handle_new_client, args=(conn,)).start()
                 client_number += 1
+                
+                Thread(target=self.handle_new_client, args=(conn,)).start()
                 print(f"client number {client_number} has connected to the server")
 
 
