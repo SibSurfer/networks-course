@@ -27,7 +27,7 @@ Final state of router 198.71.243.61 table:
 Приведите скрин или лог работы программы.
 
 #### Демонстрация работы
-![](images/screen.png)
+![](images/screen1.png)
 
 ### Задание Б (1 балл)
 Выведите на консоль промежуточные этапы работы протокола: по каждому маршрутизатору
@@ -43,9 +43,173 @@ Simulation step 3 of router 42.162.54.248
 ```
 
 #### Демонстрация работы
-todo
+```
+python3 taskA.py
+Simulation step of router ip1:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip1                  ip1                  -                      0
+ip1                  ip3                  ip3                    1
+ip1                  ip5                  ip5                    1
+ip1                  ip4                  ip3                    2
+ip1                  ip2                  ip5                    2
 
-### Задание В (2 балла)
+Simulation step of router ip2:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip2                  ip2                  -                      0
+ip2                  ip5                  ip5                    1
+ip2                  ip1                  ip5                    2
+ip2                  ip3                  ip5                    2
+
+Simulation step of router ip3:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip3                  ip3                  -                      0
+ip3                  ip1                  ip1                    1
+ip3                  ip4                  ip4                    1
+ip3                  ip5                  ip5                    1
+ip3                  ip2                  ip5                    2
+
+Simulation step of router ip4:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip4                  ip4                  -                      0
+ip4                  ip3                  ip3                    1
+ip4                  ip1                  ip3                    2
+ip4                  ip5                  ip3                    2
+ip4                  ip2                  ip3                    3
+
+Simulation step of router ip5:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip5                  ip5                  -                      0
+ip5                  ip1                  ip1                    1
+ip5                  ip2                  ip2                    1
+ip5                  ip3                  ip3                    1
+ip5                  ip4                  ip3                    2
+
+Simulation step: 2
+
+Simulation step of router ip1:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip1                  ip1                  -                      0
+ip1                  ip3                  ip3                    1
+ip1                  ip5                  ip5                    1
+ip1                  ip4                  ip3                    2
+ip1                  ip2                  ip5                    2
+
+Simulation step of router ip2:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip2                  ip2                  -                      0
+ip2                  ip5                  ip5                    1
+ip2                  ip1                  ip5                    2
+ip2                  ip3                  ip5                    2
+ip2                  ip4                  ip5                    3
+
+Simulation step of router ip3:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip3                  ip3                  -                      0
+ip3                  ip1                  ip1                    1
+ip3                  ip4                  ip4                    1
+ip3                  ip5                  ip5                    1
+ip3                  ip2                  ip5                    2
+
+Simulation step of router ip4:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip4                  ip4                  -                      0
+ip4                  ip3                  ip3                    1
+ip4                  ip1                  ip3                    2
+ip4                  ip5                  ip3                    2
+ip4                  ip2                  ip3                    3
+
+Simulation step of router ip5:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip5                  ip5                  -                      0
+ip5                  ip1                  ip1                    1
+ip5                  ip2                  ip2                    1
+ip5                  ip3                  ip3                    1
+ip5                  ip4                  ip3                    2
+
+Simulation step: 3
+
+Simulation step of router ip1:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip1                  ip1                  -                      0
+ip1                  ip3                  ip3                    1
+ip1                  ip5                  ip5                    1
+ip1                  ip4                  ip3                    2
+ip1                  ip2                  ip5                    2
+
+Simulation step of router ip2:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip2                  ip2                  -                      0
+ip2                  ip5                  ip5                    1
+ip2                  ip1                  ip5                    2
+ip2                  ip3                  ip5                    2
+ip2                  ip4                  ip5                    3
+
+Simulation step of router ip3:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip3                  ip3                  -                      0
+ip3                  ip1                  ip1                    1
+ip3                  ip4                  ip4                    1
+ip3                  ip5                  ip5                    1
+ip3                  ip2                  ip5                    2
+
+Simulation step of router ip4:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip4                  ip4                  -                      0
+ip4                  ip3                  ip3                    1
+ip4                  ip1                  ip3                    2
+ip4                  ip5                  ip3                    2
+ip4                  ip2                  ip3                    3
+
+Simulation step of router ip5:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip5                  ip5                  -                      0
+ip5                  ip1                  ip1                    1
+ip5                  ip2                  ip2                    1
+ip5                  ip3                  ip3                    1
+ip5                  ip4                  ip3                    2
+
+Final state of router ip1 table:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip1                  ip1                  -                      0
+ip1                  ip3                  ip3                    1
+ip1                  ip5                  ip5                    1
+ip1                  ip4                  ip3                    2
+ip1                  ip2                  ip5                    2
+
+Final state of router ip2 table:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip2                  ip2                  -                      0
+ip2                  ip5                  ip5                    1
+ip2                  ip1                  ip5                    2
+ip2                  ip3                  ip5                    2
+ip2                  ip4                  ip5                    3
+
+Final state of router ip3 table:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip3                  ip3                  -                      0
+ip3                  ip1                  ip1                    1
+ip3                  ip4                  ip4                    1
+ip3                  ip5                  ip5                    1
+ip3                  ip2                  ip5                    2
+
+Final state of router ip4 table:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip4                  ip4                  -                      0
+ip4                  ip3                  ip3                    1
+ip4                  ip1                  ip3                    2
+ip4                  ip5                  ip3                    2
+ip4                  ip2                  ip3                    3
+
+Final state of router ip5 table:
+[Source IP]          [Destination IP]     [Next Hop]           Metric              
+ip5                  ip5                  -                      0
+ip5                  ip1                  ip1                    1
+ip5                  ip2                  ip2                    1
+ip5                  ip3                  ip3                    1
+ip5                  ip4                  ip3                    2
+```
+
+### Задание В (2 балла) - сделано (бонус + 3 балла тоже)
 
 Реализуйте имитацию работы маршрутизаторов в виде отдельных потоков на примере
 приложения, рассмотренного на занятии.
